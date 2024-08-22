@@ -1208,6 +1208,8 @@ std::ostream& operator<<(std::ostream& streem, const NEWSTR& newstr)
 
 std::istream& operator>>(std::istream& streem, NEWSTR& newstr)
 {
+	// не смог по-другому реализовать из-за недостатка знаний -_-
+	// сорян за говнокод
 	std::string str;
 	streem >> str;
 	for (size_t i = 0; i < str.size(); i++){
